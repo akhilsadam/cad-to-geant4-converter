@@ -1,5 +1,5 @@
 """
-Author      : Andrii Tykhonov (andrii.tykhonov@cern.ch)
+Author      : Andrii Tykhonov (andrii.tykhonov@cern.ch) & Akhil Sadam(akhil.sadam@utexas.edu)
 Description : A light-weight tool to convert CAD drawings 
               (.stl) into geant4 compatible format (.gdml)
 """
@@ -65,6 +65,7 @@ MATERIALS_INFO = '''
 #@            - EpoxyResin
 #@            - AlNO
 #@            - SAC305
+#@	      - Vikuiti
 #@       
 #@  Please contact the author to implement more materials, 
 #@  or (and) feel free to implement them yourself
@@ -103,6 +104,7 @@ MATERIALS_LIST = [
 	{"name" : "Q235",         "group" : "Other"},
 	{"name" : "AL5052-H32",   "group" : "Other"},
 	{"name" : "Brass",        "group" : "Other"},
+	{"name" : "Vikuiti",        "group" : "Other"},
 ]
 
 MATERIALS = '''
@@ -572,6 +574,14 @@ MATERIALS = '''
         <fraction n="0.510" ref="tungsten"/>
         <fraction n="0.312" ref="cadmium"/>
         <fraction n="0.178" ref="oxygen"/>
+     </material>
+     
+     <!-- Vikuiti -->  
+     <!-- polysterene 3M material -->
+     <material name="Vikuiti" state="solid">
+        <D unit="g/cm3" value="1.07"/>
+        <fraction n="0.5" ref="carbon"/>
+        <fraction n="0.5" ref="hydrogen"/>
      </material>
 
     </materials>
