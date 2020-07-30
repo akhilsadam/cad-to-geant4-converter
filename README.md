@@ -28,6 +28,10 @@ How it works: as an input to the tool, a set of stl files is provided where each
 ```bash
 python  stl_gdml.py  out_name  input_file_1.stl ... input_file_N.stl
 ```
+or
+```bash
+python  stl_multiple.py  out_name  input_file_dir/*.stl
+```
 
 This will create:
   - ```out_name.gdml```       - top level gdml
