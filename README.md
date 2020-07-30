@@ -32,7 +32,7 @@ or
 ```bash
 python  stl_multiple.py  out_name  input_file_dir/*.stl
 ```
-### NOTE: if using GDML in linux and creating it in Windows, make sure the fix labeled such (LINE 775 in stl_gdml) is enabled! (\ vs / discrepancy). Also note gdml should be placed in Geant4 top directory (same as executable) to avoid issues.
+### NOTE: if using GDML in linux and creating it in Windows, make sure all files are in the same directory! (\ vs / discrepancy). Also note gdml should be placed in Geant4 top directory (same as executable) to avoid issues.
 
 This will create:
   - ```out_name.gdml```       - top level gdml
