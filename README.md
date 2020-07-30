@@ -32,6 +32,7 @@ or
 ```bash
 python  stl_multiple.py  out_name  input_file_dir/*.stl
 ```
+# NOTE: if using GDML in linux and creating it in Windows, make sure eveerything is in one directory! (\ vs / discrepancy)
 
 This will create:
   - ```out_name.gdml```       - top level gdml
@@ -74,7 +75,7 @@ So far only basic materials are implemented. If not yet in the list, new materia
 Before running the example, download and unzip this repository. Then do:
 ```bash
 cd cad-to-geant4-converter/Example
-python ../stl_gdml.py test_model ./*.stl 
+python ../stl_multiple.py test_model *.stl 
 ```
 
 As a result, you will get a test_model.gdml file, which you can use as a GEANT4 geometry. Inside the ```test_model.gdml```, one can see different sub-detector parts, each part corresponding to one intial ```.stl``` file.
