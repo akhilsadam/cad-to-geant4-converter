@@ -705,6 +705,7 @@ def __get_orientation__(norm, v1, v2, v3):
 	return 1 if __vector_inner__(norm,norm1)>0 else -1
 
 def __get_inputname_base__(fname):
+	print(fname.split("/")[-1]);
 	return fname.split("/")[-1].split(".stl")[0]
 
 
