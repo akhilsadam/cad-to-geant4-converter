@@ -28,6 +28,14 @@ How it works: as an input to the tool, a set of stl files is provided where each
 ```bash
 python  stl_gdml.py  out_name  input_file_1.stl ... input_file_N.stl
 ```
+### OR FOR PET GDML
+```bash
+python  stl_multiple.py  gdml.gdml *.stl
+```
+after placing all the stl files into the same directory, and renaming them according to the below convention:
+S_EJ208(1).stl, S_EJ208(2).stl ....
+ - Use the select all in Windows to edit the names to S_EJ208 (which will then rename as S_EJ208 (1).stl, S_EJ208 (2).stl ...), and then run the renameNoSpace script to remove any spaces.
+
 
 This will create:
   - ```out_name.gdml```       - top level gdml
