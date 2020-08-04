@@ -22,7 +22,7 @@ FOOTER = '</gdml>'
 
 
 AUNIT  = 'deg'
-LUNIT  = 'mm'
+LUNIT  = 'cm'
 
 MATERIALS_INFO = '''
 
@@ -1060,7 +1060,7 @@ def stl_to_gdml(fname):
 			thekey = x+y+z
 			sortedvertexes.append(thekey)
 
-	#__print__("Soring vertices - may take some time...")
+	#__print__("Sorting vertices - may take some time...")
 	sortedvertexes = sorted(sortedvertexes)
 	#__print__("... done sorting")
 

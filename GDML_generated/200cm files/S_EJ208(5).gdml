@@ -2,18 +2,18 @@
 <gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
 
     <define>
-        <position name="S_EJ208(5)_v0" unit="mm" x="-3.89" y="-0.31" z="200.0"/>
-        <position name="S_EJ208(5)_v1" unit="mm" x="-3.89" y="-0.31" z="0.0"/>
-        <position name="S_EJ208(5)_v2" unit="mm" x="-3.89" y="0.31" z="200.0"/>
-        <position name="S_EJ208(5)_v3" unit="mm" x="-3.89" y="0.31" z="0.0"/>
-        <position name="S_EJ208(5)_v4" unit="mm" x="-6.43" y="-0.31" z="200.0"/>
-        <position name="S_EJ208(5)_v5" unit="mm" x="-6.43" y="-0.31" z="0.0"/>
-        <position name="S_EJ208(5)_v6" unit="mm" x="-6.43" y="0.31" z="200.0"/>
-        <position name="S_EJ208(5)_v7" unit="mm" x="-6.43" y="0.31" z="0.0"/>
+        <position name="S_EJ208(5)_v0" unit="cm" x="-3.89" y="-0.31" z="200.0"/>
+        <position name="S_EJ208(5)_v1" unit="cm" x="-3.89" y="-0.31" z="0.0"/>
+        <position name="S_EJ208(5)_v2" unit="cm" x="-3.89" y="0.31" z="200.0"/>
+        <position name="S_EJ208(5)_v3" unit="cm" x="-3.89" y="0.31" z="0.0"/>
+        <position name="S_EJ208(5)_v4" unit="cm" x="-6.43" y="-0.31" z="200.0"/>
+        <position name="S_EJ208(5)_v5" unit="cm" x="-6.43" y="-0.31" z="0.0"/>
+        <position name="S_EJ208(5)_v6" unit="cm" x="-6.43" y="0.31" z="200.0"/>
+        <position name="S_EJ208(5)_v7" unit="cm" x="-6.43" y="0.31" z="0.0"/>
     </define>
 
     <solids>
-        <tessellated aunit="deg" lunit="mm" name="S_EJ208(5)-SOL">
+        <tessellated aunit="deg" lunit="cm" name="S_EJ208(5)-SOL">
              <triangular vertex1="S_EJ208(5)_v0" vertex2="S_EJ208(5)_v1" vertex3="S_EJ208(5)_v2"/>
              <triangular vertex1="S_EJ208(5)_v2" vertex2="S_EJ208(5)_v1" vertex3="S_EJ208(5)_v3"/>
              <triangular vertex1="S_EJ208(5)_v4" vertex2="S_EJ208(5)_v5" vertex3="S_EJ208(5)_v0"/>
