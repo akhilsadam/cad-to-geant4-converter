@@ -35,7 +35,7 @@ python  stl_multiple.py  gdml.gdml *.stl
 after placing all the stl files into the same directory, and renaming them according to the below convention:
 S_EJ208(1).stl, S_EJ208(2).stl ....
  - Use the select all in Windows to edit the names to S_EJ208 (which will then rename as S_EJ208 (1).stl, S_EJ208 (2).stl ...), and then run the renameNoSpace script to remove any spaces.
-
+Change line 1155 in stl_gdml for more realistic world sizes!
 IF this converter is not being used to convert STL files for the scintillator, make sure the default unit (currently cm) matches the CAD files!The default unit can be set in the stl_gdml file.
 
 

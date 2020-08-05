@@ -1152,7 +1152,7 @@ def stl_to_gdml(fname):
 
 def creat_gdml_bundle(outname, infiles):
 	# some world constants
-	WORLD_BOX_SIZE = __float_to_str__(10000.)
+	WORLD_BOX_SIZE = __float_to_str__(400.) #////////// change this for a more realistic world size.
 	SOLIDNMAE  = "world_solid"
 	VOLUMENAME = "world_volume"
 
