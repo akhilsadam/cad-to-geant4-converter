@@ -36,9 +36,11 @@ after placing all the stl files into the same directory, and renaming them accor
 S_EJ208(1).stl, S_EJ208(2).stl ....
  - Use the select all in Windows to edit the names to S_EJ208 (which will then rename as S_EJ208 (1).stl, S_EJ208 (2).stl ...), and then run the renameNoSpace script to remove any spaces.
 
+IF this converter is not being used to convert STL files for the scintillator, make sure the default unit (currently cm) matches the CAD files!The default unit can be set in the stl_gdml file.
+
 
 This will create:
-  - ```out_name.gdml```       - top level gdml
+  - ```gdml.gdml```       - top level gdml
   - ```input_file_1.gdml```   
   - ```...```  
   - ```input_file_N.gdml```
