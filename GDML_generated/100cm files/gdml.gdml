@@ -763,7 +763,7 @@
     </materials>
 
     <solids>
-        <box lunit="cm" name="world_solid" x="10000.0" y="10000.0" z="10000.0" />
+        <box lunit="cm" name="world_solid" x="400.0" y="400.0" z="400.0" />
     </solids>
 
 	<structure>

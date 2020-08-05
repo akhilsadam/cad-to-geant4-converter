@@ -378,7 +378,15 @@
 		   <fraction n="0.030" ref="Silver"/>
 		   <fraction n="0.005" ref="Copper"/>
 	 </material>
+>>>>>>> 0477cac45c30143c88bd6efba862f57a0116e11e
 
+
+   
+   
+<<<<<<< HEAD
+	 <!-- Kapton -->
+=======
+<<<<<<< HEAD
 	 <!-- Kapton -->
    
 	 <material name="Kapton" state="solid">
@@ -514,9 +522,248 @@
 		<fraction n="0.5263157895" ref="hydrogen"/>
 	 </material>
 	</materials>
+=======
+     <!-- Kapton -->
+>>>>>>> 0477cac45c30143c88bd6efba862f57a0116e11e
+   
+	 <material name="Kapton" state="solid">
+		   <D value="1.42" unit="g/cm3"/>
+		   <fraction n="0.0273" ref="hydrogen"/>
+		   <fraction n="0.7213" ref="carbon"/>
+		   <fraction n="0.0765" ref="nitrogen"/>
+		   <fraction n="0.1749" ref="oxygen"/>
+	 </material>
+   
+
+
+<<<<<<< HEAD
+	  <!-- Aluminum, Hineycomb, Carbon fibre, etc. (simple materials) -->
+
+	  <material formula="Al" name="Aluminum" state="solid">
+		   <D value="2.700" unit="g/cm3"/>
+		   <fraction n="1." ref="aluminum"/>
+	  </material>
+		
+	  <material name="CarbonFibre" state="solid">      
+		   <D unit="g/cm3" value="1.55"/>
+		   <fraction n="0.85" ref="carbon"/>      
+		   <fraction n="0.03" ref="hydrogen"/>      
+		   <fraction n="0.04" ref="nitrogen"/>
+		   <fraction n="0.08" ref="oxygen"/>
+	  </material>     
+
+	  <material name="Honeycomb" state="solid">
+		   <D value="0.030" unit="g/cm3"/>
+		   <fraction n="1." ref="aluminum"/>
+	  </material>
+
+	  <!-- Silicon -->
+	  <material name="Silicon" state="solid">
+		   <D value="2.333" unit="g/cm3"/>
+		   <fraction n="1." ref="silicon"/>
+	  </material>
+
+	  <!-- Tungsten -->
+	  <material name="Tungsten" state="solid">
+		  <D value="19.3" unit="g/cm3"/>
+		  <fraction n="1." ref="tungsten"/>
+	  </material> 
+
+	 <!-- Cadmium Telluride -->
+	 <material name="CdTe" state="solid">
+		   <!--https://www.azom.com/article.aspx?ArticleID=8408-->
+		   <D value="5.85" unit="g/cm3"/>
+		   <composite n="1" ref="cadmium"/>
+		   <composite n="1" ref="tellurium"/>
+	 </material>
+
+	  <!-- PMT -->
+	  <!--sylgard 170, Silicon Rubber Polydimethylsiloxane(PDMS)-->
+	  <material name="PDMS" formula="SiOC2H6" >
+		  <D value="1.34" unit="g/cm3" />
+		  <composite n="1" ref="silicon" />
+		  <composite n="1" ref="oxygen" />
+		  <composite n="2" ref="carbon" />
+		  <composite n="6" ref="hydrogen" />
+	  </material>
+
+	  <material name="Glass" formula="SiO2" >
+		  <D value="2.5" unit="g/cm3" />
+		  <composite n="1" ref="silicon" />
+		  <composite n="2" ref="oxygen" />
+	  </material>
+
+	  <material name="PMT" state="solid">
+		 <D value="2.524" unit="g/cm3"/>
+		 <fraction n="0.7" ref="aluminum"/>
+		 <fraction n="0.2" ref="Glass"/>
+		 <fraction n="0.1" ref="PDMS"/>
+	  </material>
+
+	  <!-- BGO -->
+	  <material name="BGO" formula="Bi4Ge3O12" >
+		 <D value="7.13" unit="g/cm3" />
+		 <composite n="4" ref="bismuth" />
+		 <composite n="3" ref="germanium" />
+		 <composite n="12" ref="oxygen" />
+	  </material>
+
+
+	 <!-- BC254 (neutron detector) -->
+	 <material name="BC254" state="solid">
+		<MEE unit="eV" value="173"/>
+		<D unit="g/cm3" value="1.026"/>
+		<fraction n="0.2492" ref="carbon"/>
+		<fraction n="0.7475" ref="hydrogen"/>
+		<fraction n="0.0033" ref="B"/>
+	 </material>
+
+	 <!-- CdWO4 -->  
+	 <!-- see https://www.tandfonline.com/doi/pdf/10.1080/00223131.2008.10875862 -->
+	 <!-- see https://www.convertunits.com/molarmass/CdWO4 -->
+	 <material name="CdWO4" state="solid">
+		<D unit="g/cm3" value="7.9"/>
+		<fraction n="0.510" ref="tungsten"/>
+		<fraction n="0.312" ref="cadmium"/>
+		<fraction n="0.178" ref="oxygen"/>
+	 </material>
+	 
+	 <!-- Vikuiti -->  
+	 <!-- polysterene 3M material -->
+	 <material name="Vikuiti" state="solid">
+	 	<property name="RINDEX" ref="RINDEX0x556962eb4880"/>
+		<property name="REFLECTIVITY" ref="REFLECT_VK"/>
+      	<property name="GROUPVEL" ref="GROUPVEL0x556962ec7940"/>
+      	<property name="ABSLENGTH" ref="ABSLENGTH0x556962eaf370"/>
+      	<T unit="K" value="293.15"/>
+     	<MEE unit="eV" value="65.9436601819466"/>
+		<D unit="g/cm3" value="1.07"/>
+		<fraction n="0.5" ref="carbon"/>
+		<fraction n="0.5" ref="hydrogen"/>
+	 </material>
+
+	 <!-- EJ208 -->  
+	 <!-- EJ-208 -->
+	 <material name="EJ208" state="solid">
+	 	<property name="RINDEX" ref="RINDEX0x556962eb9d80"/>
+      	<property name="GROUPVEL" ref="GROUPVEL0x556962ece160"/>
+      	<property name="ABSLENGTH" ref="ABSLENGTH0x556962eedd40"/>
+      	<property name="FASTCOMPONENT" ref="FASTCOMPONENT0x556962ec5260"/>
+      	<property name="SCINTILLATIONYIELD" ref="SCINTILLATIONYIELD"/>
+      	<property name="RESOLUTIONSCALE" ref="RESOLUTIONSCALE"/>
+      	<property name="FASTTIMECONSTANT" ref="FASTTIMECONSTANT"/>
+      	<property name="YIELDRATIO" ref="YIELDRATIO"/>
+      	<T unit="K" value="293.15"/>
+      	<MEE unit="eV" value="64.6844741120545"/>
+		<D unit="g/cm3" value="1.023"/>
+		<fraction n="0.4736842105" ref="carbon"/>
+		<fraction n="0.5263157895" ref="hydrogen"/>
+	 </material>
+	</materials>
+=======
+      <!-- Aluminum, Hineycomb, Carbon fibre, etc. (simple materials) -->
+
+      <material formula="Al" name="Aluminum" state="solid">
+           <D value="2.700" unit="g/cm3"/>
+           <fraction n="1." ref="aluminum"/>
+      </material>
+        
+      <material name="CarbonFibre" state="solid">      
+           <D unit="g/cm3" value="1.55"/>
+           <fraction n="0.85" ref="carbon"/>      
+           <fraction n="0.03" ref="hydrogen"/>      
+           <fraction n="0.04" ref="nitrogen"/>
+           <fraction n="0.08" ref="oxygen"/>
+      </material>     
+
+      <material name="Honeycomb" state="solid">
+           <D value="0.030" unit="g/cm3"/>
+           <fraction n="1." ref="aluminum"/>
+      </material>
+
+      <!-- Silicon -->
+      <material name="Silicon" state="solid">
+           <D value="2.333" unit="g/cm3"/>
+           <fraction n="1." ref="silicon"/>
+      </material>
+
+      <!-- Tungsten -->
+      <material name="Tungsten" state="solid">
+          <D value="19.3" unit="g/cm3"/>
+          <fraction n="1." ref="tungsten"/>
+      </material> 
+
+     <!-- Cadmium Telluride -->
+     <material name="CdTe" state="solid">
+           <!--https://www.azom.com/article.aspx?ArticleID=8408-->
+           <D value="5.85" unit="g/cm3"/>
+           <composite n="1" ref="cadmium"/>
+           <composite n="1" ref="tellurium"/>
+     </material>
+
+      <!-- PMT -->
+      <!--sylgard 170, Silicon Rubber Polydimethylsiloxane(PDMS)-->
+      <material name="PDMS" formula="SiOC2H6" >
+          <D value="1.34" unit="g/cm3" />
+          <composite n="1" ref="silicon" />
+          <composite n="1" ref="oxygen" />
+          <composite n="2" ref="carbon" />
+          <composite n="6" ref="hydrogen" />
+      </material>
+
+      <material name="Glass" formula="SiO2" >
+          <D value="2.5" unit="g/cm3" />
+          <composite n="1" ref="silicon" />
+          <composite n="2" ref="oxygen" />
+      </material>
+
+      <material name="PMT" state="solid">
+         <D value="2.524" unit="g/cm3"/>
+         <fraction n="0.7" ref="aluminum"/>
+         <fraction n="0.2" ref="Glass"/>
+         <fraction n="0.1" ref="PDMS"/>
+      </material>
+
+      <!-- BGO -->
+      <material name="BGO" formula="Bi4Ge3O12" >
+         <D value="7.13" unit="g/cm3" />
+         <composite n="4" ref="bismuth" />
+         <composite n="3" ref="germanium" />
+         <composite n="12" ref="oxygen" />
+      </material>
+
+
+     <!-- BC254 (neutron detector) -->
+     <material name="BC254" state="solid">
+        <MEE unit="eV" value="173"/>
+        <D unit="g/cm3" value="1.026"/>
+        <fraction n="0.2492" ref="carbon"/>
+        <fraction n="0.7475" ref="hydrogen"/>
+        <fraction n="0.0033" ref="B"/>
+     </material>
+
+     <!-- CdWO4 -->  
+     <!-- see https://www.tandfonline.com/doi/pdf/10.1080/00223131.2008.10875862 -->
+     <!-- see https://www.convertunits.com/molarmass/CdWO4 -->
+     <material name="CdWO4" state="solid">
+        <D unit="g/cm3" value="7.9"/>
+        <fraction n="0.510" ref="tungsten"/>
+        <fraction n="0.312" ref="cadmium"/>
+        <fraction n="0.178" ref="oxygen"/>
+     </material>
+     
+     <!-- Vikuiti -->  
+     <!-- polysterene 3M material -->
+     <material name="Vikuiti" state="solid">
+        <D unit="g/cm3" value="1.07"/>
+        <fraction n="0.5" ref="carbon"/>
+        <fraction n="0.5" ref="hydrogen"/>
+     </material>
+
+    </materials>
 
     <solids>
-        <box lunit="cm" name="world_solid" x="10000.0" y="10000.0" z="10000.0" />
+        <box lunit="cm" name="world_solid" x="400.0" y="400.0" z="400.0" />
     </solids>
 
 	<structure>
